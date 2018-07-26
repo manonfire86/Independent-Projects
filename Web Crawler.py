@@ -22,13 +22,13 @@ from dateutil.rrule import *
 import datetime as dt
 from dateutil.parser import *
 
-os.chdir(r'\\Tolisfile01\public\Work\Technology\Python Tools - SOP, Scripts, Data\Zillow')
+os.chdir(r'')
 
 ### Parse Files
 
-zipdb = pd.read_excel(r'\\Tolisfile01\public\Work\Technology\Python Tools - SOP, Scripts, Data\Zillow\Zipcode Database.xlsx')
+zipdb = pd.read_excel(r'')
 
-pipedf = pd.read_excel(r'\\Tolisfile01\public\Work\Technology\Python Tools - SOP, Scripts, Data\Zillow\Pipeline Inventory_June212018.xlsx')
+pipedf = pd.read_excel(r'')
 pipepaddress = pipedf[pipedf['ZipCode']==zipdb['Zipcode'][0]]['Address']
 
 ### Webcrawl
